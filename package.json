@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/WisdomQuest/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/WisdomQuest/frontend-project-44#readme"
+  "homepage": "https://github.com/WisdomQuest/frontend-project-44#readme",
+  "type": "module",
+  "bin": {
+    "code": "bin/brain-games.js",
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
