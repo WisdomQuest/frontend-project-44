@@ -5,4 +5,4 @@ const getUserName = () => {
   console.log(`Hello , ${userName} !`);
 };
 
-export { getUserName };
+export default getUserName;
