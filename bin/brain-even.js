@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import Hello from './brain-games.js';
+import { welcomeUser } from '../src/cli.js';
 import evenGame from '../src/cliEven.js';
 
-Hello();
+welcomeUser();
 evenGame();
