@@ -6,8 +6,8 @@ const descriptionGame = 'What is the result of the expression?';
 const actionGame = () => {
   const sign = ['+', '-', '*'];
   const randomSiqn = sign[randomNumber(3)];
-  const Num1 = randomNumber(11);
-  const Num2 = randomNumber(11);
+  const Num1 = randomNumber();
+  const Num2 = randomNumber();
   let correctAnswer = '';
   const questionMath = `${Num1} ${randomSiqn} ${Num2}`;
   switch (randomSiqn) {
