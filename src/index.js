@@ -1,9 +1,11 @@
 import readlineSync from 'readline-sync';
-import { userName } from './games/cli.js';
+// import userName from './games/cli.js';
 
 const maxWin = 3;
 
-const roundGame = (game) => {
+const roundGame = (game, user, descriptionGame) => {
+  const userName = user();
+  console.log(descriptionGame);
   for (let winCount = 0; winCount < maxWin; winCount += 1) {
     const [question, correctAnswer] = game();
     console.log(`Question: ${question}`);

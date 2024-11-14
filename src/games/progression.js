@@ -21,8 +21,7 @@ const actionGame = () => {
   return [question, String(correctAnswer)];
 };
 
-const progressionGame = () => {
-  console.log(descriptionGame);
-  roundGame(actionGame);
+const progressionGame = (user) => {
+  roundGame(actionGame, user, descriptionGame);
 };
 export default progressionGame;

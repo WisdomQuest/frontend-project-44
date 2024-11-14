@@ -17,9 +17,8 @@ const actionGame = () => {
   return [questionNum, correctAnswer];
 };
 
-const primeGame = () => {
-  console.log(descriptionGame);
-  roundGame(actionGame);
+const primeGame = (user) => {
+  roundGame(actionGame, user, descriptionGame);
 };
 
 export default primeGame;

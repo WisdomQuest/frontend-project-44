@@ -25,9 +25,8 @@ const actionGame = () => {
   return [questionMath, String(correctAnswer)];
 };
 
-const calcGame = () => {
-  console.log(descriptionGame);
-  roundGame(actionGame);
+const calcGame = (user) => {
+  roundGame(actionGame, user, descriptionGame);
 };
 
 export default calcGame;
