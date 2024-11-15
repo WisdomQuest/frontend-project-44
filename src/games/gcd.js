@@ -18,8 +18,8 @@ const actionGame = () => {
   return [questionExample, String(correctAnswer)];
 };
 
-const gcdGame = (user) => {
-  roundGame(actionGame, user, descriptionGame);
+const gcdGame = () => {
+  roundGame(actionGame, descriptionGame);
 };
 
 export default gcdGame;

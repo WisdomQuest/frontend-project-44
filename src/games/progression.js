@@ -14,14 +14,11 @@ const actionGame = () => {
   const hiddenNum = randomNumber(10);
   const correctAnswer = progression[hiddenNum];
   progression[hiddenNum] = '..';
-  let question = '';
-  progression.forEach((element) => {
-    question += `${element} `;
-  });
+  const question = progression.join(' ');
   return [question, String(correctAnswer)];
 };
 
-const progressionGame = (user) => {
-  roundGame(actionGame, user, descriptionGame);
+const progressionGame = () => {
+  roundGame(actionGame, descriptionGame);
 };
 export default progressionGame;

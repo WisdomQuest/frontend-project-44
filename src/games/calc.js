@@ -6,27 +6,27 @@ const descriptionGame = 'What is the result of the expression?';
 const actionGame = () => {
   const sign = ['+', '-', '*'];
   const randomSiqn = sign[randomNumber(3)];
-  const Num1 = randomNumber();
-  const Num2 = randomNumber();
+  const num1 = randomNumber();
+  const num2 = randomNumber();
   let correctAnswer = '';
-  const questionMath = `${Num1} ${randomSiqn} ${Num2}`;
+  const questionMath = `${num1} ${randomSiqn} ${num2}`;
   switch (randomSiqn) {
     case '+':
-      correctAnswer = Num1 + Num2;
+      correctAnswer = num1 + num2;
       break;
     case '-':
-      correctAnswer = Num1 - Num2;
+      correctAnswer = num1 - num2;
       break;
     case '*':
-      correctAnswer = Num1 * Num2;
+      correctAnswer = num1 * num2;
       break;
     default:
   }
   return [questionMath, String(correctAnswer)];
 };
 
-const calcGame = (user) => {
-  roundGame(actionGame, user, descriptionGame);
+const calcGame = () => {
+  roundGame(actionGame, descriptionGame);
 };
 
 export default calcGame;

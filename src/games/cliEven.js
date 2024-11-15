@@ -11,8 +11,8 @@ const actionGame = () => {
   return [questNumber, correctAnswer];
 };
 
-const evenGame = (user) => {
-  roundGame(actionGame, user, descriptionGame);
+const evenGame = () => {
+  roundGame(actionGame, descriptionGame);
 };
 
 export default evenGame;
