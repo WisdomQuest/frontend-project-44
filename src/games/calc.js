@@ -5,12 +5,12 @@ const descriptionGame = 'What is the result of the expression?';
 
 const actionGame = () => {
   const sign = ['+', '-', '*'];
-  const randomSiqn = sign[randomNumber(3)];
-  const num1 = randomNumber();
-  const num2 = randomNumber();
+  const randomSign = sign[randomNumber(0, sign.length)];
+  const num1 = randomNumber(0, 100);
+  const num2 = randomNumber(0, 100);
   let correctAnswer = '';
-  const questionMath = `${num1} ${randomSiqn} ${num2}`;
-  switch (randomSiqn) {
+  const questionMath = `${num1} ${randomSign} ${num2}`;
+  switch (randomSign) {
     case '+':
       correctAnswer = num1 + num2;
       break;
@@ -25,8 +25,6 @@ const actionGame = () => {
   return [questionMath, String(correctAnswer)];
 };
 
-const calcGame = () => {
-  roundGame(actionGame, descriptionGame);
-};
+const calcGame = () => roundGame(actionGame, descriptionGame);
 
 export default calcGame;
